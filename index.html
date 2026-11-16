@@ -73,8 +73,8 @@
 					const element = document.currentScript.parentElement;
 
 					Promise.all([
-						import("_app/immutable/entry/start.BX4IgoCa.js"),
-						import("_app/immutable/entry/app.ByLkcufA.js")
+						import("./_app/immutable/entry/start.BX4IgoCa.js"),
+						import("./_app/immutable/entry/app.ByLkcufA.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 36],
@@ -88,4 +88,5 @@
 		</div>
 	</body>
 </html>
+
 
