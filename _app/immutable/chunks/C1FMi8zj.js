@@ -1,0 +1,1 @@
+import"./CkJqmxid.js";import"./xihTtKlq.js";import e from"./CgNTlOhz.js";import{t}from"./BbP5kdGR.js";function n(n,r){e(n,{get data(){return r.data},segmen:`get-well-soon`,get Blok(){return t}})}export{n as default};

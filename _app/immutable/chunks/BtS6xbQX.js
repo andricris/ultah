@@ -1,0 +1,1 @@
+import"./CkJqmxid.js";import"./xihTtKlq.js";import e from"./CgNTlOhz.js";import{t}from"./BWeFB7zG.js";function n(n,r){e(n,{get data(){return r.data},segmen:`will-you-marry-me`,get Blok(){return t}})}export{n as default};

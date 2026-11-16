@@ -1,0 +1,1 @@
+import{J as e,dt as t,ft as n}from"./CkJqmxid.js";var r=new class{#e=n(``);get teks(){return e(this.#e)}set teks(e){t(this.#e,e,!0)}#t=n(!1);get tampil(){return e(this.#t)}set tampil(e){t(this.#t,e,!0)}#n=null;pesan(e,t=2400){this.teks=e,this.tampil=!0,this.#n&&clearTimeout(this.#n),this.#n=setTimeout(()=>this.tampil=!1,t)}};export{r as t};

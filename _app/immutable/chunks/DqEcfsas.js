@@ -1,0 +1,1 @@
+import"./CkJqmxid.js";import"./xihTtKlq.js";import e from"./DtSOET3h.js";import{t}from"./Dc1vIxN4.js";function n(n,r){e(n,{get data(){return r.data},segmen:`ngajak-balikan`,get Blok(){return t}})}export{n as default};

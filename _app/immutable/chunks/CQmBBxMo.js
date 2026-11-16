@@ -1,0 +1,1 @@
+import{J as e,dt as t,ft as n}from"./CkJqmxid.js";import{y as r}from"./BGx-j8Zi.js";var i=new class{#e=n(null);get me(){return e(this.#e)}set me(e){t(this.#e,e,!0)}#t=n(!1);get laciBuka(){return e(this.#t)}set laciBuka(e){t(this.#t,e,!0)}penjagaKeluar=null;async segarkan(){try{this.me=await r.me()}catch{}}ubah(e){this.me&&={...this.me,...e}}};export{i as t};

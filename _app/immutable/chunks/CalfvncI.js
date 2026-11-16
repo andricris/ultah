@@ -1,0 +1,1 @@
+var e=`/`,t=``;function n(n,r,i=75){if(!n)return n??``;let a=`width=${Math.max(80,Math.ceil(r/80)*80)},quality=${i},format=auto,fit=scale-down`;return n.startsWith(e)?`${t}/cdn-cgi/image/${a}/${n}`:n.startsWith(`/`)&&!n.startsWith(`//`)&&!n.startsWith(`/cdn-cgi/`)?`/cdn-cgi/image/${a}${n}`:n}export{n as t};

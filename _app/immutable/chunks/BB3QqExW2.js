@@ -1,0 +1,1 @@
+import"./CkJqmxid.js";import"./xihTtKlq.js";import e from"./DtSOET3h.js";import{t}from"./CDIHNjJ_2.js";function n(n,r){e(n,{get data(){return r.data},segmen:`birthday`,get Blok(){return t}})}export{n as default};

@@ -1,0 +1,1 @@
+import{x as e}from"./BGx-j8Zi.js";import{m as t}from"./DI4K851h.js";async function n(n){let{slug:r,answer:i,choices:a,note:o}=n;if(!r)return{status:`pratinjau`};t(r,{answer:i,choices:a},globalThis.localStorage);try{return(await e.submit(r,i,a,o)).success?{status:`terkirim`}:{status:`gagal`}}catch{return{status:`gagal`}}}export{n as t};

@@ -1,0 +1,1 @@
+import"./CkJqmxid.js";import"./xihTtKlq.js";import e from"./LUiLaRr6.js";import{n as t,t as n}from"./D5C0kA1m.js";function r(r,i){n(r,{get data(){return i.data},get onUnlock(){return i.onUnlock},children:(n,r)=>{e(n,{get data(){return i.data},segmen:`anniversary`,get Blok(){return t}})},$$slots:{default:!0}})}export{r as default};

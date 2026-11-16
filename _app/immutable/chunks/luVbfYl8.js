@@ -1,0 +1,1 @@
+import"./CkJqmxid.js";import"./xihTtKlq.js";import e from"./CgNTlOhz.js";import{t}from"./BZjD06Xn.js";function n(n,r){e(n,{get data(){return r.data},segmen:`deeptalk`,get Blok(){return t}})}export{n as default};

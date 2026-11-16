@@ -1,0 +1,1 @@
+import{w as e}from"./BGx-j8Zi.js";async function t(t){try{return(await e.getById(t)).data?.createdAs===`reseller`?`/reseller/ucapan`:`/dashboard`}catch{return`/dashboard`}}export{t};

@@ -1,0 +1,1 @@
+import"./CkJqmxid.js";import"./xihTtKlq.js";import e from"./LUiLaRr6.js";import{t}from"./CyR10wqG2.js";function n(n,r){e(n,{get data(){return r.data},segmen:`graduation`,get Blok(){return t}})}export{n as default};

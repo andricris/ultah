@@ -1,0 +1,1 @@
+function e(e){return typeof e==`string`&&/^\d{6}$/.test(e)}var t=e=>`ucapanPin:${e}`;function n(e,n){if(typeof sessionStorage>`u`)return!1;try{return sessionStorage.getItem(t(e))===n}catch{return!1}}function r(e,n){if(!(typeof sessionStorage>`u`))try{sessionStorage.setItem(t(e),n)}catch{}}export{e as n,r,n as t};

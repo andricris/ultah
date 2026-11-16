@@ -1,0 +1,1 @@
+import{Ct as e,bt as t}from"./CkJqmxid.js";var n=Symbol(`merek-template`);function r(t){e(n,t)}function i(){let e=t(n);return()=>e?.()?.trim()||`kapibara.local`}export{r as n,i as t};

@@ -1,0 +1,1 @@
+import{n as e,u as t}from"./BGx-j8Zi.js";async function n(n,r,i){if(!n)return{status:`pratinjau`};if(!e.includes(r))return{status:`gagal`};try{return(await t.submit(n,r,(i||``).trim().slice(0,140))).success?{status:`terkirim`}:{status:`gagal`}}catch{return{status:`gagal`}}}export{n as t};

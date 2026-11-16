@@ -1,0 +1,1 @@
+import{jt as e}from"../chunks/CkJqmxid.js";import"../chunks/xihTtKlq.js";import{i as t}from"../chunks/DyiRs-O4.js";var n=e({load:()=>r}),r=()=>{throw t(301,`/reseller/beranda`)};function i(e){}export{i as component,n as universal};

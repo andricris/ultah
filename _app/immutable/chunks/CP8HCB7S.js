@@ -1,0 +1,1 @@
+import{u as e}from"./Bsf6Z_Vw.js";import{t}from"./DXGZewPM.js";async function n(n){try{await navigator.clipboard.writeText(n);let r=n.length>42?`${n.slice(0,42)}…`:n;return t.pesan(e(`reseller.umum.disalin`,{teks:r})),!0}catch{return t.pesan(e(`reseller.umum.gagalSalin`),3500),!1}}export{n as t};

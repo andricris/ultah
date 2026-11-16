@@ -1,0 +1,1 @@
+import{v as e}from"./BGx-j8Zi.js";async function t(t,n){if(!t)return{status:`pratinjau`};try{return(await e.submit(t,(n||``).trim().slice(0,160))).success?{status:`terkirim`}:{status:`gagal`}}catch{return{status:`gagal`}}}export{t};
