@@ -1,12 +1,12 @@
-window.KapibaraFlyTransition = (() => {
+﻿window.KapibaraFlyTransition = (() => {
 
-  // Sprite kapibara (pakai aset asli project, bukan bunga) — direferensikan
+  // Sprite kapibara (pakai aset asli project, bukan bunga) â€” direferensikan
   // lewat path relatif, bukan base64, supaya gampang diganti/ditambah nanti.
   const SPRITES = [
-    '/templates/ungkapan-sayang/kapibara-buket/assets/kapibara.webp',
-    '/templates/ungkapan-sayang/kapibara-buket/assets/kapibara-setelah.png',
-    '/templates/ungkapan-sayang/kapibara-buket/assets/kapibara.webp',
-    '/templates/ungkapan-sayang/kapibara-buket/assets/kapibara-setelah.png',
+    'templates/ungkapan-sayang/kapibara-buket/assets/kapibara.webp',
+    'templates/ungkapan-sayang/kapibara-buket/assets/kapibara-setelah.png',
+    'templates/ungkapan-sayang/kapibara-buket/assets/kapibara.webp',
+    'templates/ungkapan-sayang/kapibara-buket/assets/kapibara-setelah.png',
   ];
 
   // ---- Konfigurasi timing (ms) ----
@@ -38,13 +38,13 @@ window.KapibaraFlyTransition = (() => {
 
   /* Bangun "ladang bunga": grid menutup viewport + 1 ring di luar tepi,
      dengan jitter posisi supaya terlihat organik tetapi cakupan tetap
-     terjamin (ukuran bunga ≥ 2.2x sel, jitter ≤ 0.2x sel → tidak ada celah). */
+     terjamin (ukuran bunga â‰¥ 2.2x sel, jitter â‰¤ 0.2x sel â†’ tidak ada celah). */
   function buildField(){
     const vw = innerWidth, vh = innerHeight;
     const cx = vw / 2, cy = vh / 2;
 
     // Pembagi 42 dikalibrasi agar total elemen (termasuk 1 ring di luar
-    // tepi layar) berkisar 60 di ponsel s.d. ±80 di desktop — cukup padat
+    // tepi layar) berkisar 60 di ponsel s.d. Â±80 di desktop â€” cukup padat
     // untuk menutup penuh, cukup hemat untuk tetap 60fps.
     const cell = Math.max(110, Math.sqrt((vw * vh) / 42));
     const cols = Math.ceil(vw / cell) + 2;
@@ -62,7 +62,7 @@ window.KapibaraFlyTransition = (() => {
         const rotEnd = rand(-30, 30);
         const spin = (Math.random() < 0.5 ? -1 : 1) * rand(120, 260);
 
-        // Arah radial dari pusat layar → titik target.
+        // Arah radial dari pusat layar â†’ titik target.
         // Posisi awal/akhir = target didorong keluar melewati tepi layar.
         let dx = tx - cx, dy = ty - cy;
         const len = Math.hypot(dx, dy) || 1;
@@ -75,9 +75,9 @@ window.KapibaraFlyTransition = (() => {
         flowers.push({
           sprite: imgs[(Math.random() * imgs.length) | 0],
           size, tx, ty, ox, oy, rotEnd, spin,
-          // masuk: tepi mendarat dulu → tengah terakhir (layar menutup ke dalam)
+          // masuk: tepi mendarat dulu â†’ tengah terakhir (layar menutup ke dalam)
           delayIn : (1 - Math.min(dCenter / maxDist, 1)) * IN_SPREAD + rand(0, 70),
-          // keluar: tengah pergi dulu → terbuka dari dalam ke luar
+          // keluar: tengah pergi dulu â†’ terbuka dari dalam ke luar
           delayOut: (1 - Math.min(dCenter / maxDist, 1)) * OUT_SPREAD + rand(0, 60),
         });
       }
@@ -94,7 +94,7 @@ window.KapibaraFlyTransition = (() => {
 
   /* Warm pool: bangun seluruh elemen bunga SEKARANG (saat halaman idle),
      bukan saat tombol diklik. Semua bunga sudah berada di posisi awal
-     (di luar layar, overlay overflow:hidden → tidak terlihat), tetapi
+     (di luar layar, overlay overflow:hidden â†’ tidak terlihat), tetapi
      layer GPU-nya sudah dibuat dan sprite sudah dirasterisasi.
      Hasilnya: play() tidak membayar biaya apa pun di frame pertama. */
   async function warm(){
@@ -162,7 +162,7 @@ window.KapibaraFlyTransition = (() => {
       f.el.style.transform = onT(f);
     }
 
-    // 3) Tunggu sampai layar benar-benar tertutup → tukar konten.
+    // 3) Tunggu sampai layar benar-benar tertutup â†’ tukar konten.
     await wait(IN_DUR + IN_SPREAD + 90);
     onCovered && onCovered();
     await wait(HOLD);
@@ -180,3 +180,4 @@ window.KapibaraFlyTransition = (() => {
 
   return { preload, warm, play };
 })();
+
